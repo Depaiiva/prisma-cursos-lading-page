@@ -7,7 +7,7 @@ Este projeto consiste no desenvolvimento da página institucional da Prisma Curs
 ## Participantes
 Abaixo, a equipe responsável pelo desenvolvimento deste projeto:
 
-*   **Carlos Henrique** - [https://github.com/](https://github.com/Depaiiva)
+*   **Carlos Henrique** - ![https://github.com/](https://github.com/Depaiiva)
 *   **Dev 2** - [https://github.com/](https://github.com/)
 *   **Dev 3** - [https://github.com/](https://github.com/)
 *   **Dev 4** - [https://github.com/](https://github.com/)
