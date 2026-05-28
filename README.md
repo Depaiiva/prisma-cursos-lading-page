@@ -5,16 +5,48 @@ Este projeto consiste no desenvolvimento da página institucional da Prisma Curs
 ---
 
 ## Participantes
-Abaixo, a equipe responsável pelo desenvolvimento deste projeto:
-
-*   **Carlos Henrique** - ![https://github.com/](https://github.com/Depaiiva)
-*   **Dev 2** - [https://github.com/](https://github.com/)
-*   **Dev 3** - [https://github.com/](https://github.com/)
-*   **Dev 4** - [https://github.com/](https://github.com/)
-*   **Dev 5** - [https://github.com/](https://github.com/)
-*   **Dev 6** - [https://github.com/](https://github.com/)
-
-*(Para visualizar as fotos de perfil, os links acima serão atualizados com os respectivos nomes de usuário do GitHub).*
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Depaiiva">
+        <img style="border-radius: 50%;" src="https://github.com/Depaiiva.png" width="150px" alt="Carlos Henrique de Paiva Munis"/><br />
+        <sub><b>Carlos Henrique de Paiva Munis</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/thatsrenan">
+        <img style="border-radius: 50%;" src="https://github.com/thatsrenan.png" width="150px" alt="Renan Curione de Castro"/><br />
+        <sub><b>Renan Curione de Castro</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/DanielAlmeidaFrota">
+        <img style="border-radius: 50%;" src="https://github.com/DanielAlmeidaFrota.png" width="150px" alt="Daniel Almeida Frota"/><br />
+        <sub><b>Daniel Almeida Frota</b></sub>
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/">
+        <img style="border-radius: 50%;" src="https://github.com/.png" width="150px" alt="Eduardo Mariz de Souza"/><br />
+        <sub><b>Eduardo Mariz de Souza</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/">
+        <img style="border-radius: 50%;" src="https://github.com/.png" width="150px" alt="Renato Henrique Martins Torres"/><br />
+        <sub><b>Renato Henrique Martins Torres</b></sub>
+      </a>
+    </td>
+    <td align="center">
+      <a href="https://github.com/">
+        <img style="border-radius: 50%;" src="https://github.com/.png" width="150px" alt="Thales Sanjuan Farias de Oliveira"/><br />
+        <sub><b>Thales Sanjuan Farias de Oliveira</b></sub>
+      </a>
+    </td>
+  </tr>
+</table>
 
 ---
 
