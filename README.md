@@ -28,8 +28,8 @@ Este projeto consiste no desenvolvimento da página institucional da Prisma Curs
   </tr>
   <tr>
     <td align="center">
-      <a href="https://github.com/">
-        <img style="border-radius: 50%;" src="https://github.com/.png" width="150px" alt="Eduardo Mariz de Souza"/><br />
+      <a href="https://github.com/marizedu">
+        <img style="border-radius: 50%;" src="https://github.com/marizedu.png" width="150px" alt="Eduardo Mariz de Souza"/><br />
         <sub><b>Eduardo Mariz de Souza</b></sub>
       </a>
     </td>
