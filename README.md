@@ -34,8 +34,8 @@ Este projeto consiste no desenvolvimento da página institucional da Prisma Curs
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/">
-        <img style="border-radius: 50%;" src="https://github.com/.png" width="150px" alt="Renato Henrique Martins Torres"/><br />
+      <a href="https://github.com/RenatoMTorres">
+        <img style="border-radius: 50%;" src="https://github.com/RenatoMTorres.png" width="150px" alt="Renato Henrique Martins Torres"/><br />
         <sub><b>Renato Henrique Martins Torres</b></sub>
       </a>
     </td>
