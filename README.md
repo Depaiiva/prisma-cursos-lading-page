@@ -40,8 +40,8 @@ Este projeto consiste no desenvolvimento da página institucional da Prisma Curs
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/">
-        <img style="border-radius: 50%;" src="https://github.com/.png" width="150px" alt="Thales Sanjuan Farias de Oliveira"/><br />
+      <a href="https://github.com/ThalesS7">
+        <img style="border-radius: 50%;" src="https://github.com/ThalesS7.png" width="150px" alt="Thales Sanjuan Farias de Oliveira"/><br />
         <sub><b>Thales Sanjuan Farias de Oliveira</b></sub>
       </a>
     </td>
