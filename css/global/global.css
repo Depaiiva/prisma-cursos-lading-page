@@ -27,3 +27,13 @@ section {
   max-width: 600px;
   margin: 0 auto var(--spacing-3xl);
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1; /* empurra o footer para baixo */
+}
