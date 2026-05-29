@@ -11,11 +11,15 @@ const progressMap = {
   '/pages/contact.html':      100,
 };
 
-// Ativa o link correto
 links.forEach(link => {
   link.classList.remove('active');
   const linkPath = new URL(link.href).pathname;
-  if (linkPath === currentPath) {
+
+  // Considera "/" e "/index.html" como a mesma página
+  const normalizedCurrent = currentPath === '/' ? '/index.html' : currentPath;
+  const normalizedLink = linkPath === '/' ? '/index.html' : linkPath;
+
+  if (normalizedLink === normalizedCurrent) {
     link.classList.add('active');
   }
 });
