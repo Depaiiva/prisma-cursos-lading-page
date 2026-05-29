@@ -1,0 +1,233 @@
+/* =============================================
+   NAVBAR — Prisma Cursos
+   Fiel ao design Figma
+   ============================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+
+/* ---------- Wrapper externo ---------- */
+#navbar {
+  width: 100%;
+  height: 156px;
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: var(--shadow-sm);
+}
+
+/* ---------- Container interno ---------- */
+.nav-container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+  display: flex;
+  align-items: center;
+  gap: 14.92px; /* distância logo → retângulo nav */
+  height: 100%;
+}
+
+/* ---------- Logo ---------- */
+.nav-logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  text-decoration: none;
+  width: 126.1px;
+  height: 136px;
+  background-color: #160A3A;
+  border-radius: var(--radius-lg); /* 20px, igual ao nav-block */
+  justify-content: center;
+  align-self: center;
+}
+
+.nav-logo img {
+  height: 80px;
+  width: auto;
+  display: block;
+}
+
+/* ---------- Bloco central (retângulo arredondado) ---------- */
+.nav-block {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px; /* distância botões → progress bar */
+  background-color: var(--color-bg);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-lg); /* 20px */
+  padding: 18px 28px 14px;
+  min-width: 0;
+  height: 136px;
+  justify-content: center;
+}
+
+/* ---------- Lista de links ---------- */
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px; /* distância entre botões */
+  margin: 0;
+  padding: 0;
+}
+
+/* ---------- Botões de navegação ---------- */
+.nav-links li a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  padding: 0 20px;
+  border-radius: var(--radius-full);
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color var(--transition-fast), color var(--transition-fast);
+
+  /* estado padrão: branco com texto roxo */
+  background-color: #FFFFFF;
+  color: #7C3AED;
+
+  transition: background-color var(--transition-fast), 
+              color var(--transition-fast),
+              transform var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+/* Estado ativo: fundo roxo, texto branco */
+.nav-links li a.active {
+  background-color: #7C3AED;
+  color: #FFFFFF;
+  transform: scale(1.03);
+  border-color: #7C3AED;
+}
+
+/* Hover nos inativos */
+.nav-links li a:not(.active):hover {
+  background-color: #FFFFFF;        /* força branco, não herda o fundo da tela */
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.2); /* sombra roxa suave */
+}
+
+/* Hover no ativo */
+.nav-links li a.active:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.3);
+}
+
+/* ---------- Progress bar ---------- */
+.nav-progress-bar {
+  width: 100%;
+  height: 27px;
+  background-color: #FFFFFF;
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  border: 1px solid var(--color-primary);
+}
+
+.nav-progress-bar__fill {
+  height: 100%;
+  background-color: #7C3AED;
+  border-radius: var(--radius-full);
+  width: 0%;                              /* controlado via JS */
+  transition: width var(--transition-base);
+}
+
+/* ---------- Hamburger (mobile) ---------- */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  flex-shrink: 0;
+}
+
+.nav-hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #7C3AED;
+  border-radius: 2px;
+  transition: transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+/* ---------- Responsivo ---------- */
+@media (max-width: 1024px) {
+  .nav-links li:nth-child(1) a,
+  .nav-links li:nth-child(2) a,
+  .nav-links li:nth-child(3) a,
+  .nav-links li:nth-child(4) a,
+  .nav-links li:nth-child(5) a {
+    width: auto;
+    font-size: 18px;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links li a {
+    font-size: 16px; /* era 25px */
+    padding: 0 14px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 768px) {
+  #navbar {
+    height: auto;
+    padding: 12px 0;
+  }
+
+  .nav-container {
+    flex-wrap: wrap;
+    position: relative;
+    align-items: center;
+    gap: 23.39px;
+  }
+
+  .nav-block {
+    display: none;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+  }
+
+  .nav-logo {
+    width: 80px;
+    height: 86px;
+  }
+
+  .nav-block.open {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .nav-links li a {
+    width: 100% !important;
+    font-size: 16px;
+    justify-content: flex-start;
+    padding: 0 16px;
+  }
+
+  .nav-hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+}
