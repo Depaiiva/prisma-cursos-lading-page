@@ -32,6 +32,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--color-bg);       /* ← garante fundo em todas as páginas */
+  font-family: var(--font-body);          /* ← fonte padrão herdada por tudo */
+  color: var(--color-text);              /* ← cor de texto padrão */
 }
 
 main {
