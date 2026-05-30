@@ -19,7 +19,7 @@ h6 { font-size: var(--text-lg); }
 p {
   font-family: var(--font-body);
   font-size: var(--text-base);
-  color: var(--color-text-muted);
+  color: var(--color-text);
   line-height: 1.7;
 }
 
