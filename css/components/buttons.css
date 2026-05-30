@@ -34,6 +34,11 @@
   border: 2px solid var(--color-primary);
 }
 
+.btn-nav {
+  font-family: 'Space Grotesk', sans-serif;  /* ← fonte dos botões da navbar */
+  font-weight: 700;
+}
+
 .btn-outline:hover {
   background: var(--color-primary);
   color: #fff;
