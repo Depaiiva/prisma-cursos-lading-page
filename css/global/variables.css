@@ -22,8 +22,8 @@
   --color-border: #E5E7EB;
 
   /* --- Tipografia --- */
-  --font-display: 'Syne', sans-serif;
-  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Space Grotesk', sans-serif;
 
   --text-xs: 0.75rem;
   --text-sm: 0.875rem;
@@ -48,7 +48,9 @@
   /* --- Layout --- */
   --container-max: 1200px;
   --container-padding: 1.5rem;
-  --navbar-height: 72px;
+  --navbar-height: 156px;
+  --footer-bg: #C1A3F5;
+  --footer-height: 186px;
 
   /* --- Bordas --- */
   --radius-sm: 6px;
