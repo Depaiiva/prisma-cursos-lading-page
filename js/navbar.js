@@ -27,7 +27,8 @@ links.forEach(link => {
 // Preenche a barra
 const fill = document.querySelector('.nav-progress-bar__fill');
 if (fill) {
-  const progress = progressMap[currentPath] ?? 0;
+  const normalizedPath = currentPath === '/' ? '/index.html' : currentPath; // ← mesma normalização
+  const progress = progressMap[normalizedPath] ?? 0;
   fill.style.width = progress + '%';
 }
 
