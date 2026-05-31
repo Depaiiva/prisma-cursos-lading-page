@@ -4,31 +4,30 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Prisma Cursos - Transformando vidas com conhecimento" />
-  <title>Prisma Cursos</title>
+  <meta name="description" content="Prisma Cursos - Quiz" />
+  <title>Quiz | Prisma Cursos</title>
   <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
     rel="stylesheet" />
   <!-- Global CSS -->
-  <link rel="stylesheet" href="css/global/reset.css" />
-  <link rel="stylesheet" href="css/global/variables.css" />
-  <link rel="stylesheet" href="css/global/typography.css" />
-  <link rel="stylesheet" href="css/global/global.css" />
+  <link rel="stylesheet" href="../css/global/reset.css" />
+  <link rel="stylesheet" href="../css/global/variables.css" />
+  <link rel="stylesheet" href="../css/global/typography.css" />
+  <link rel="stylesheet" href="../css/global/global.css" />
   <!-- Component CSS -->
-  <link rel="stylesheet" href="css/components/navbar.css" />
-  <link rel="stylesheet" href="css/components/footer.css" />
-  <link rel="stylesheet" href="css/components/buttons.css" />
-  <link rel="stylesheet" href="css/components/cards.css" />
-  <link rel="stylesheet" href="css/components/progressbar.css" />
+  <link rel="stylesheet" href="../css/components/navbar.css" />
+  <link rel="stylesheet" href="../css/components/footer.css" />
+  <link rel="stylesheet" href="../css/components/buttons.css" />
+  <link rel="stylesheet" href="../css/components/progressbar.css" />
   <!-- Page CSS -->
-  <link rel="stylesheet" href="css/pages/home.css" />
+  <link rel="stylesheet" href="../css/pages/quiz.css" />
   <!-- Responsive -->
-  <link rel="stylesheet" href="css/responsive/tablet.css" media="(max-width: 1024px)" />
-  <link rel="stylesheet" href="css/responsive/mobile.css" media="(max-width: 480px)" />
+  <link rel="stylesheet" href="../css/responsive/tablet.css" media="(max-width: 1024px)" />
+  <link rel="stylesheet" href="../css/responsive/mobile.css" media="(max-width: 480px)" />
 </head>
 
 <body>
@@ -36,18 +35,18 @@
   <!-- NAVBAR -->
   <header id="navbar">
     <nav class="nav-container">
-      <a href="index.html" class="nav-logo">
-        <img src="assets/logo-prisma.png" alt="Prisma Cursos" />
+      <a href="../index.html" class="nav-logo">
+        <img src="../assets/logo-prisma.png" alt="Prisma Cursos" />
       </a>
 
       <!-- ↓ este div é o retângulo com borda roxa -->
       <div class="nav-block">
         <ul class="nav-links">
-          <li><a href="index.html">Início</a></li>
-          <li><a href="./pages/who-we-are.html">Quem Somos</a></li>
-          <li><a href="./pages/courses.html">Cursos</a></li>
-          <li><a href="./pages/testimonials.html">Depoimentos</a></li>
-          <li><a href="./pages/contact.html">Contato</a></li>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="who-we-are.html">Quem Somos</a></li>
+          <li><a href="courses.html">Cursos</a></li>
+          <li><a href="testimonials.html">Depoimentos</a></li>
+          <li><a href="contact.html">Contato</a></li>
         </ul>
         <div class="nav-progress-bar">
           <div class="nav-progress-bar__fill"></div>
@@ -57,10 +56,14 @@
     </nav>
   </header>
 
-  <!-- HERO SECTION (Pessoa 2) -->
+  <!-- QUIZ (Pessoa 5) -->
   <main>
-    <section id="hero" class="hero-section">
-      <!-- conteúdo da Pessoa 2 -->
+    <section id="quiz" class="quiz-section">
+      <!-- 
+        Essa página pode ser acessada a partir de um CTA em cursos.html ou index.html.
+        Exemplo de link para cá: <a href="pages/quiz.html">Fazer o Quiz</a>
+        conteúdo da Pessoa 5 
+      -->
     </section>
   </main>
 
@@ -71,7 +74,7 @@
       <!-- Coluna 1: Logo + CNPJ -->
       <div class="footer-col footer-col--brand">
         <div class="footer-brand">
-          <img src="assets/logo-prisma.png" alt="Prisma Cursos" class="footer-logo-img" />
+          <img src="../assets/logo-prisma.png" alt="Prisma Cursos" class="footer-logo-img" />
           <div class="footer-brand-text">
             <span class="footer-brand-name">Prisma Cursos de Informática S.A.</span>
             <p class="footer-cnpj">CNPJ 01.234.567/8901-23</p>
@@ -93,11 +96,11 @@
       <div class="footer-col footer-col--contact">
         <p class="footer-contact-title">Fale Conosco</p>
         <div class="footer-contact-item">
-          <img src="assets/icon-whatsapp.svg" alt="WhatsApp" class="footer-icon" />
+          <img src="../assets/icon-whatsapp.svg" alt="WhatsApp" class="footer-icon" />
           <span>+55 (61) 9 1234-5678</span>
         </div>
         <div class="footer-contact-item">
-          <img src="assets/icon-email.svg" alt="E-mail" class="footer-icon" />
+          <img src="../assets/icon-email.svg" alt="E-mail" class="footer-icon" />
           <span>prisma.cursos@gmail.com</span>
         </div>
       </div>
@@ -106,8 +109,8 @@
   </footer>
 
   <!-- JavaScript -->
-  <script src="js/navbar.js"></script>
-  <script src="js/main.js"></script>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/main.js"></script>
 
 </body>
 
