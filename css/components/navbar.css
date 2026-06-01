@@ -187,47 +187,59 @@
 @media (max-width: 768px) {
   #navbar {
     height: auto;
-    padding: 12px 0;
+    padding: 8px 0;
   }
 
   .nav-container {
-    flex-wrap: wrap;
-    position: relative;
-    align-items: center;
-    gap: 23.39px;
-  }
-
-  .nav-block {
-    display: none;
-    width: 100%;
-    height: auto;
-    border-radius: var(--radius-md);
+    flex-wrap: nowrap; /* mantém tudo em uma linha */
+    gap: 8px;
   }
 
   .nav-logo {
-    width: 80px;
-    height: 86px;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
   }
 
-  .nav-block.open {
-    display: flex;
+  .nav-logo img {
+    height: 45px;
+  }
+
+  .nav-block {
+    display: flex; /* sempre visível, sem hamburger */
+    flex: 1;
+    height: auto;
+    padding: 8px 12px;
+    gap: 8px;
+    border: none;        /* sem borda no mobile */
+    background: transparent; /* fundo transparente */
   }
 
   .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    flex-direction: row; /* botões em linha */
+    flex-wrap: nowrap;
+    gap: 4px;
+    overflow-x: auto;    /* scroll horizontal se necessário */
+    scrollbar-width: none; /* esconde scrollbar */
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
   }
 
   .nav-links li a {
-    width: 100% !important;
-    font-size: 16px;
-    justify-content: flex-start;
-    padding: 0 16px;
+    font-size: 11px;
+    padding: 0 8px;
+    height: 30px;
+    white-space: nowrap;
+  }
+
+  .nav-progress-bar {
+    display: block;
+    height: 16px;
   }
 
   .nav-hamburger {
-    display: flex;
-    margin-left: auto;
+    display: none; /* sem hamburger */
   }
 }
