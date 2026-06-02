@@ -1,0 +1,45 @@
+/* ========================================
+   pagina-de-confirmacao.css
+   Pessoa 6 | Prisma Cursos
+   ======================================== */
+
+/* ---------- Card de confirmação ---------- */
+
+.confirmation-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2xl);
+  text-align: center;
+  min-height: 550px;
+}
+
+.confirmation-card.contact-form {
+  flex: 1.2;
+}
+
+/* ---------- Ícone de polegar ---------- */
+
+.confirmation-icon {
+  width: 140px;
+  height: 140px;
+  background-color: #1a1033;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.confirmation-icon svg {
+  width: 64px;
+  height: 64px;
+  color: var(--color-primary-light);
+}
+
+/* ---------- Botão ---------- */
+
+.confirmation-btn {
+  text-decoration: none;
+}

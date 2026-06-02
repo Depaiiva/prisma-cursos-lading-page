@@ -40,14 +40,13 @@
         <img src="../assets/logo-prisma.png" alt="Prisma Cursos" />
       </a>
 
-      <!-- este div é o retângulo com borda roxa -->
       <div class="nav-block">
         <ul class="nav-links">
           <li><a href="../index.html">Início</a></li>
           <li><a href="who-we-are.html">Quem Somos</a></li>
           <li><a href="courses.html">Cursos</a></li>
           <li><a href="testimonials.html">Depoimentos</a></li>
-          <li><a href="contact.html">Contato</a></li>
+          <li><a href="contact.html" class="active">Contato</a></li>
         </ul>
         <div class="nav-progress-bar">
           <div class="nav-progress-bar__fill"></div>
@@ -59,84 +58,130 @@
 
   <!-- CONTATO (Pessoa 6) -->
   <main>
-    <section id="contato" class="contato-section">
-      <!-- conteúdo da Pessoa 6 -->
+    <section id="contato" class="contact-section">
       <div class="contact-container">
 
-        <div class="contact-info">
+        <!-- Bloco esquerdo: informações de contato -->
+        <div class="contact-info reveal">
 
           <h1 class="contact-title">Contate-nos</h1>
 
+          <!-- Telefone -->
           <div class="contact-item">
-            <h3>Telefone</h3>
-            <p>+55 (61) 9 1234-5678</p>
+            <img src="../assets/icon-whatsapp.svg" alt="Telefone" class="contact-item__icon" />
+            <p class="contact-item__value">Telefone: 61 99202-2442</p>
           </div>
 
+          <!-- E-mail -->
           <div class="contact-item">
-            <h3>E-mail</h3>
-            <p>prisma.cursos@gmail.com</p>
+            <img src="../assets/icon-email.svg" alt="E-mail" class="contact-item__icon" />
+            <p class="contact-item__value">prisma.curso@gmail.com</p>
           </div>
 
+          <!-- Instagram -->
           <div class="contact-item">
-            <h3>Instagram</h3>
-            <p>@prisma.cursos</p>
+            <svg class="contact-item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+            <p class="contact-item__value">@Prismacursos</p>
           </div>
 
+          <!-- Mapa -->
+          <div class="contact-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.0!2d-48.0447!3d-15.9899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935bcc5a0b0a0a0b%3A0x0!2sUnB+-+Campus+Gama!5e0!3m2!1spt-BR!2sbr!4v1"
+              width="100%"
+              height="180"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="UnB Campus Gama no Google Maps"
+            ></iframe>
+          </div>
+
+          <!-- Localização -->
           <div class="contact-item">
-            <h3>Endereço</h3>
-            <p>
-              Campus Universitário FCTE<br>
-              Brasília - DF
+            <svg class="contact-item__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              aria-hidden="true">
+              <path d="M21 10c0 6-9 13-9 13S3 16 3 10a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <p class="contact-item__value contact-item__value--center">
+              Localização: St. Leste Projeção A -<br>
+              Gama Leste, Brasília -<br>
+              DF, 72444-240
             </p>
           </div>
-          
 
         </div>
 
-        <div class="contact-form">
+        <!-- Bloco direito: formulário -->
+        <div class="contact-form reveal">
 
-          <h2>Envie uma mensagem</h2>
+          <h2 class="contact-form__title">
+            Ainda tem alguma dúvida?<br>
+            <span class="contact-form__title--highlight">Nos envie uma mensagem</span>
+          </h2>
 
-          <form id="contactForm">
+          <form id="contactForm" novalidate>
 
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Nome"
-              required
-            >
-
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="Email"
-              required
-            >
-
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              placeholder="Mensagem"
-              required
-            ></textarea>
-
-            <button type="submit">
-              Enviar
-            </button>
-
-            <div id="form-feedback">
-              <!-- Mensagem de sucesso ou erro aparecerá aqui -->
+            <div class="form-group">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nome"
+                class="form-input"
+                autocomplete="name"
+                required
+              />
+              <span class="form-error" id="name-error" aria-live="polite"></span>
             </div>
 
-         </form>
+            <div class="form-group">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                class="form-input"
+                autocomplete="email"
+                required
+              />
+              <span class="form-error" id="email-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Mensagem"
+                class="form-input form-input--textarea"
+                required
+              ></textarea>
+              <span class="form-error" id="message-error" aria-live="polite"></span>
+            </div>
+
+            <div class="form-submit-wrapper">
+              <button type="submit" class="contact-submit-btn">
+                Enviar
+              </button>
+            </div>
+
+            <div id="form-feedback" role="alert" aria-live="polite"></div>
+
+          </form>
 
         </div>
 
       </div>
-
     </section>
   </main>
 
@@ -184,6 +229,7 @@
   <!-- JavaScript -->
   <script src="../js/navbar.js"></script>
   <script src="../js/main.js"></script>
+  <script src="../js/form.js"></script>
 
 </body>
 

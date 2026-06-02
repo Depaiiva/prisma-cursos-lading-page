@@ -1,79 +1,228 @@
-.contact-title{
-    color: var(--color-primary);
+/* ========================================
+   contato.css — Página de Contato
+   Pessoa 6 | Prisma Cursos
+   ======================================== */
 
-    font-size: var(--text-5xl);
+/* ---------- Seção principal ---------- */
 
-    margin-bottom: var(--spacing-xl);
+.contact-section {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--spacing-4xl) var(--spacing-3xl);
+  background-color: var(--color-bg);
 }
 
-.contato-section{
-    max-width: var(--container-max);
-    margin: 0 auto;
-    padding: var(--spacing-3xl);
-    background-color: var(--color-bg);
-    display: flex;
-    justify-content: space-between;
-    gap: var(--spacing-2xl);
+/* ---------- Layout em duas colunas ---------- */
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--spacing-3xl);
+  width: 100%;
 }
 
-.contato-container{
-    display:flex;
-    justify-content:space-between;
-    gap: var(--spacing-2xl);
+/* ---------- Bloco de informações (esquerda) ---------- */
+
+.contact-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
 }
 
-.contact-info{
-    flex: 1;
-    display:flex;
-    flex-direction:column;
-    gap: var(--spacing-lg);
+.contact-title {
+  color: var(--color-primary);
+  font-size: var(--text-5xl);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: var(--spacing-sm);
 }
 
-.contact-form{
-    flex: 1.2;
-    background-color: var(--color-primary);
-    border-radius: var(--radius-lg);
-    padding: var(--spacing-xl);
-    box-shadow: var(--shadow-md);
+/* ---------- Item de contato (linha com ícone + texto) ---------- */
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
 }
 
-.contact-form form{
-    display:flex;
-    flex-direction:column;
-    gap: var(--spacing-lg);
+.contact-item__icon {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  color: var(--color-text);   /* para os SVGs inline */
 }
 
-.contact-form input,
-.contact-form textarea{
-    background: var(--color-primary-light);
-
-    border: none;
-
-    border-radius: var(--radius-md);
-
-    padding: var(--spacing-md);
-
-    color: var(--color-text);
-
-    font-size: var(--text-lg);
+.contact-item__value {
+  font-size: var(--text-lg);
+  color: var(--color-text);
+  font-weight: 500;
+  line-height: 1.5;
 }
 
-.contact-form button{
-    background: var(--color-primary-dark);
-
-    color: white;
-
-    border: none;
-
-    border-radius: var(--radius-full);
-
-    padding: var(--spacing-md) var(--spacing-xl);
-
-    cursor: pointer;
-
-    transition: var(--transition-base);
+.contact-item__value--center {
+  text-align: center;
 }
 
-.contact-form button:hover{
-    background: var(--color-primary-light);
+/* ---------- Mapa ---------- */
+
+.contact-map {
+  width: 100%;
+  height: 300px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.contact-map iframe {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: var(--radius-md);
+}
+
+/* ---------- Bloco do formulário (direita) ---------- */
+
+.contact-form {
+  flex: 1.2;
+  background-color: var(--color-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-2xl);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-form__title {
+  color: #1d0a3d;
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: var(--spacing-xl);
+  text-align: center;
+}
+
+/* ---------- Formulário ---------- */
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+/* ---------- Inputs e textarea ---------- */
+
+.form-input {
+  width: 100%;
+  background: var(--color-primary-light);
+  border: none;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-md);
+  color: var(--color-text);
+  font-size: var(--text-base);
+  font-family: var(--font-body);
+  transition: var(--transition-fast);
+  outline: none;
+}
+
+.form-input::placeholder {
+  color: var(--color-text);
+  opacity: 0.65;
+}
+
+.form-input:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35);
+}
+
+/* Estado de erro */
+.form-input.input-error {
+  outline: 2px solid var(--color-error);
+}
+
+/* Estado válido */
+.form-input.input-success {
+  outline: 2px solid var(--color-success);
+}
+
+.form-input--textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+/* ---------- Mensagens de erro inline ---------- */
+
+.form-error {
+  font-size: var(--text-sm);
+  color: #fca5a5;
+  font-weight: 500;
+  min-height: 1.2em;
+  display: block;
+  padding-left: var(--spacing-xs);
+}
+
+/* ---------- Botão de envio — centralizado, tamanho compacto ---------- */
+
+.form-submit-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-sm);
+}
+
+.contact-submit-btn {
+  background: var(--color-primary-dark);
+  color: white;
+  border: none;
+  border-radius: var(--radius-full);
+  padding: var(--spacing-md) var(--spacing-3xl);
+  font-size: var(--text-base);
+  font-family: var(--font-body);
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.contact-submit-btn:hover {
+  background: var(--color-primary-light);
+  transform: translateY(-2px);
+}
+
+.contact-submit-btn:active {
+  transform: translateY(0);
+}
+
+.contact-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ---------- Feedback global (sucesso / erro) ---------- */
+
+#form-feedback {
+  margin-top: var(--spacing-sm);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-align: center;
+  display: none;
+}
+
+#form-feedback.feedback-success {
+  display: block;
+  background: rgba(16, 185, 129, 0.2);
+  border: 1.5px solid var(--color-success);
+  color: #6ee7b7;
+}
+
+#form-feedback.feedback-error {
+  display: block;
+  background: rgba(239, 68, 68, 0.2);
+  border: 1.5px solid var(--color-error);
+  color: #fca5a5;
 }
