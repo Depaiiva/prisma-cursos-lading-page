@@ -65,6 +65,17 @@
   text-align: center;
 }
 
+.contact-item__link {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: var(--transition-fast);
+}
+
+.contact-item__link:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
 /* ---------- Mapa ---------- */
 
 .contact-map {
