@@ -31,7 +31,7 @@
 }
  
 .hero-text h1 {
-  font-size: var(--text-5xl);
+  font-size: clamp(var(--text-3xl), 5vw, var(--text-5xl));
   font-weight: 700;
   color: var(--color-primary);
   line-height: 1.1;
@@ -39,7 +39,7 @@
 }
  
 .hero-text p {
-  font-size: var(--text-base);
+  font-size: clamp(var(--text-base), 2vw, var(--text-lg));
   color: var(--color-text-muted);
   line-height: 1.7;
   margin: 0;
@@ -176,15 +176,15 @@
 
 /* ─── PARTNERS ───────────────────────────────── */
 .partners-section {
-  max-width: var(--container-max);
-  margin: 0 auto var(--spacing-4xl);
-  padding: 0 var(--container-padding);
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
 }
  
 .partners-title {
   text-align: center;
   font-family: var(--font-display);
-  font-size: var(--text-xl);
+  font-size: clamp(var(--text-lg), 2vw, var(--text-2xl));
   font-weight: 700;
   color: var(--color-text);
   margin-bottom: var(--spacing-xl);
@@ -222,13 +222,14 @@
   right: 0;
   background: linear-gradient(to left, var(--color-bg), transparent);
 }
- 
+
 .carousel-track {
   display: flex;
   align-items: center;
   gap: var(--spacing-3xl);
   width: max-content;
   animation: scroll-partners 22s linear infinite;
+  will-change: transform;
 }
  
 .carousel-wrapper:hover .carousel-track {
@@ -254,4 +255,68 @@
 .partner-logo:hover {
   opacity: 1;
   transform: scale(1.1);
+}
+
+/* ─── RESPONSIVO */
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+ 
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: var(--spacing-2xl) var(--container-padding);
+    min-height: unset;
+    gap: var(--spacing-xl);
+  }
+ 
+  .hero-text {
+    max-width: 100%;
+  }
+ 
+  .hero-text h1 {
+    font-size: var(--text-4xl);
+  }
+ 
+  .hero-image {
+    max-width: 100%;
+    width: 100%;
+  }
+ 
+  .stats-section {
+    margin: 0 var(--container-padding) var(--spacing-3xl);
+    padding: var(--spacing-xl) var(--spacing-lg) var(--spacing-2xl);
+  }
+ 
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+ 
+  .stat-card {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+ 
+  @media (max-width: 768px) {
+    .stat-value {
+        font-size: clamp(var(--text-xl), 4vw, var(--text-2xl));
+        }
+    }
+ 
+  .partners-section {
+    margin-bottom: var(--spacing-3xl);
+  }
+}
+ 
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: var(--text-3xl);
+  }
+ 
+  .stats-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-sm);
+  }
 }
