@@ -190,6 +190,7 @@
     width: 60px;
     height: 60px;
     flex-shrink: 0;
+    border-radius: 14px;
   }
 
   .nav-logo img {
@@ -197,10 +198,9 @@
   }
 
   .nav-block {
-    display: flex;
     flex: 1;
     height: auto;
-    padding: 0;
+    padding: 8px 10px;
     gap: 8px;
     border: none;
     background: transparent;
@@ -214,8 +214,7 @@
     align-items: center;
     gap: 4px;
     width: 100%;
-    margin: 0;
-    padding: 0;
+    flex-wrap: nowrap;
   }
 
   .nav-links li {
@@ -234,11 +233,12 @@
     padding: 0 4px;
     border-radius: var(--radius-full);
 
-    font-size: 10px;
+    font-size: clamp(8px, 1.8vw, 13px);;
     font-weight: 700;
-    white-space: nowrap;
+    white-space: normal;
     text-align: center;
     text-transform: none;
+    line-height: 1.2;
   }
 
   .nav-progress-bar {
