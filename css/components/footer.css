@@ -3,7 +3,7 @@
    ============================================= */
 #footer {
   background-color: #C1A3F5;
-  min-height: 186px; /* min-height ao invés de height fixo */
+  min-height: 186px;
   display: flex;
   align-items: center;
   color: var(--color-text);
