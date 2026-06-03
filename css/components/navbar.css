@@ -1,6 +1,5 @@
 /* =============================================
    NAVBAR — Prisma Cursos
-   Fiel ao design Figma
    ============================================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght=400;500;700&display=swap');
@@ -26,7 +25,7 @@
   padding: 0 var(--container-padding);
   display: flex;
   align-items: center;
-  gap: 14.92px; /* distância logo → retângulo nav */
+  gap: 14.92px;
   height: 100%;
 }
 
@@ -134,7 +133,7 @@
   height: 100%;
   background-color: #7C3AED;
   border-radius: var(--radius-full);
-  width: 0%;                              /* controlado via JS */
+  width: 0%;
   transition: width var(--transition-base);
 }
 
@@ -182,45 +181,45 @@
   }
 
   .nav-container {
-    flex-wrap: nowrap; 
-    gap: 10px;          
-    padding: 0 10px;    
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 0 10px;
   }
 
   .nav-logo {
-    width: 60px;       
+    width: 60px;
     height: 60px;
     flex-shrink: 0;
   }
 
   .nav-logo img {
-    height: 38px;      
+    height: 38px;
   }
 
   .nav-block {
-    display: flex; 
+    display: flex;
     flex: 1;
     height: auto;
-    padding: 0;        
-    gap: 8px;          
-    border: none;        
-    background: transparent; 
-    min-width: 0;      
+    padding: 0;
+    gap: 8px;
+    border: none;
+    background: transparent;
+    min-width: 0;
   }
 
   .nav-links {
     display: flex;
-    flex-direction: row; 
-    justify-content: space-between; 
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    gap: 4px;          /* Distância exata de 4px entre cada botão */
+    gap: 4px;
     width: 100%;
     margin: 0;
     padding: 0;
   }
 
   .nav-links li {
-    flex: 1;           /* Divide o espaço horizontal igualmente */
+    flex: 1;
     display: flex;
     min-width: 0;
   }
@@ -229,23 +228,23 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    
-    height: 27px;      /* Altura exata pedida (conforme o Figma: A 27) */
-    width: 100%;       /* Faz o botão esticar em todo o comprimento do 'li' */
-    padding: 0 4px;    /* Padding mínimo apenas para o texto não colar nas bordas */
+
+    height: 27px;
+    width: 100%;
+    padding: 0 4px;
     border-radius: var(--radius-full);
-    
-    font-size: 8px;    /* Ajustado para o texto longo caber no botão esticado sem estourar */
+
+    font-size: 10px;
     font-weight: 700;
-    white-space: nowrap; 
+    white-space: nowrap;
     text-align: center;
     text-transform: none;
   }
 
   .nav-progress-bar {
     display: block;
-    height: 16px;      
+    height: 16px;
     width: 100%;
-    border: none;      
+    border: none;
   }
 }
