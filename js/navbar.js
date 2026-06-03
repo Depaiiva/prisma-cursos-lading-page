@@ -15,7 +15,13 @@ function getCurrentPageKey(path) {
   const segments = path.split('/');
   const lastSegment = segments[segments.length - 1];
 
-  return lastSegment || 'index.html';
+  const page = lastSegment || 'index.html';
+
+  if (page === 'confirmation-form-contact.html') {
+    return 'contact.html';
+  }
+
+  return page;
 }
 
 const activeKey = getCurrentPageKey(currentPath);
@@ -28,6 +34,7 @@ links.forEach(link => {
   if (linkKey === activeKey) {
     link.classList.add('active');
   }
+
 });
 
 // Preenche a barra
