@@ -1,9 +1,8 @@
 /* =============================================
    NAVBAR — Prisma Cursos
-   Fiel ao design Figma
    ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght=400;500;700&display=swap');
 
 /* ---------- Wrapper externo ---------- */
 #navbar {
@@ -26,7 +25,7 @@
   padding: 0 var(--container-padding);
   display: flex;
   align-items: center;
-  gap: 14.92px; /* distância logo → retângulo nav */
+  gap: 14.92px;
   height: 100%;
 }
 
@@ -88,7 +87,6 @@
   font-weight: 700;
   text-decoration: none;
   white-space: nowrap;
-  transition: background-color var(--transition-fast), color var(--transition-fast);
 
   /* estado padrão: branco com texto roxo */
   background-color: #FFFFFF;
@@ -135,7 +133,7 @@
   height: 100%;
   background-color: #7C3AED;
   border-radius: var(--radius-full);
-  width: 0%;                              /* controlado via JS */
+  width: 0%;
   transition: width var(--transition-base);
 }
 
@@ -162,72 +160,91 @@
   transition: transform var(--transition-fast), opacity var(--transition-fast);
 }
 
-/* ---------- Responsivo ---------- */
+/* ---------- Responsivo Tablet ---------- */
 @media (max-width: 1024px) {
-  .nav-links li:nth-child(1) a,
-  .nav-links li:nth-child(2) a,
-  .nav-links li:nth-child(3) a,
-  .nav-links li:nth-child(4) a,
-  .nav-links li:nth-child(5) a {
-    width: auto;
-    font-size: 18px;
-  }
-
   .nav-links {
     gap: 12px;
   }
 
   .nav-links li a {
-    font-size: 16px; /* era 25px */
+    font-size: 16px; 
     padding: 0 14px;
     height: 38px;
   }
 }
 
+/* ---------- Responsivo Total Mobile ---------- */
 @media (max-width: 768px) {
   #navbar {
     height: auto;
-    padding: 12px 0;
+    padding: 10px 0;
   }
 
   .nav-container {
-    flex-wrap: wrap;
-    position: relative;
-    align-items: center;
-    gap: 23.39px;
-  }
-
-  .nav-block {
-    display: none;
-    width: 100%;
-    height: auto;
-    border-radius: var(--radius-md);
+    flex-wrap: nowrap;
+    gap: 10px;
+    padding: 0 10px;
   }
 
   .nav-logo {
-    width: 80px;
-    height: 86px;
+    width: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 14px;
   }
 
-  .nav-block.open {
-    display: flex;
+  .nav-logo img {
+    height: 38px;
+  }
+
+  .nav-block {
+    flex: 1;
+    height: auto;
+    padding: 8px 10px;
+    gap: 8px;
+    border: none;
+    background: transparent;
+    min-width: 0;
   }
 
   .nav-links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    width: 100%;
+    flex-wrap: nowrap;
+  }
+
+  .nav-links li {
+    flex: 1;
+    display: flex;
+    min-width: 0;
   }
 
   .nav-links li a {
-    width: 100% !important;
-    font-size: 16px;
-    justify-content: flex-start;
-    padding: 0 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 27px;
+    width: 100%;
+    padding: 0 4px;
+    border-radius: var(--radius-full);
+
+    font-size: clamp(8px, 1.8vw, 13px);;
+    font-weight: 700;
+    white-space: normal;
+    text-align: center;
+    text-transform: none;
+    line-height: 1.2;
   }
 
-  .nav-hamburger {
-    display: flex;
-    margin-left: auto;
+  .nav-progress-bar {
+    display: block;
+    height: 16px;
+    width: 100%;
+    border: none;
   }
 }
