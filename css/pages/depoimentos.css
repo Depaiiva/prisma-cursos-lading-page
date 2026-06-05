@@ -1,57 +1,105 @@
-/*Estrutura dos cards*/
-.primeiro-card, 
+/*  estilo dos cards(desktop) */
+.primeiro-card,
 .segundo-card,
 .terceiro-card,
 .quarto-card {
-  border: 2px solid #7d33ff;
-  border-radius: 15px;
-  padding: 24px;
-  max-width: 1500px; 
-  margin: 20px auto; 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  flex-direction: row-reverse;
+    border: 2px solid #7d33ff;
+    border-radius: 15px;
+    padding: 24px;
+    max-width: 1500px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: row-reverse; 
 }
 
-/*Textos dos cards (titulo + paragrafo)*/
+/* textos dos card (titulo + paragrafos) */
 .textos-card,
 .stextos-card,
 .ttextos-card,
 .qtextos-card {
-  display: flex;
-  flex-direction: column; 
-  gap: 12px;              
-  text-align: left;      
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
 }
 
-/*Apenas os titulos dos cards separadamente*/
+/* Apenas os títulos dos cards separadamente */
 .ptitulo,
 .stitulo,
 .ttitulo,
 .qtitulo {
-  font-size: 50px; 
-  font-weight: bold;
-  text-align: center; 
-  margin: 0; 
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
 }
 
-/*Apenas os paragrados separadamente*/
+/* Apenas os parágrafos separadamente */
 .pparagrafo,
 .sparagrafo,
 .tparagrafo,
 .qparagrafo {
-  font-size: 25px; 
-  color: #333333; 
-  margin: 0;
+    font-size: 25px;
+    color: #333333;
+    margin: 0;
 }
 
-/*Imagens dos cards*/
+/* Imagens dos cards */
 .primeiro-card img,
 .segundo-card img,
 .terceiro-card img,
 .quarto-card img {
+    border-radius: 20px;
+}
 
-  border-radius: 20px; 
+/*  responsividade (mobile) */
+@media (max-width: 768px) {
+    .primeiro-card,
+    .segundo-card,
+    .terceiro-card,
+    .quarto-card {
+        flex-direction: column-reverse; 
+        text-align: center;            
+        padding: 16px;                
+        margin: 15px 10px;             
+    }
+
+    /* faz os blocos de texto a se alinharem ao centro */
+    .textos-card,
+    .stextos-card,
+    .ttextos-card,
+    .qtextos-card {
+        text-align: center;
+    }
+
+    /* reduz o tamanho dos títulos para caber na tela do celular */
+    .ptitulo, 
+    .stitulo, 
+    .ttitulo, 
+    .qtitulo {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    /* reduz o tamanho dos parágrafos para uma leitura confortável no celular */
+    .pparagrafo, 
+    .sparagrafo, 
+    .tparagrafo, 
+    .qparagrafo {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    /* controla o tamanho da imagem para não estourar o card no mobile */
+    .primeiro-card img,
+    .segundo-card img,
+    .terceiro-card img,
+    .quarto-card img {
+        width: 100%;
+        max-width: 200px; 
+        height: auto;
+    }
 }
