@@ -43,10 +43,10 @@
       <div class="nav-block">
         <ul class="nav-links">
           <li><a href="../index.html">Início</a></li>
-          <li><a href="./who-we-are.html">Quem Somos</a></li>
-          <li><a href="./courses.html">Cursos</a></li>
-          <li><a href="./testimonials.html">Depoimentos</a></li>
-          <li><a href="./contact.html">Contato</a></li>
+          <li><a href="who-we-are.html">Quem Somos</a></li>
+          <li><a href="courses.html">Cursos</a></li>
+          <li><a href="testimonials.html">Depoimentos</a></li>
+          <li><a href="contact.html">Contato</a></li>
         </ul>
         <div class="nav-progress-bar">
           <div class="nav-progress-bar__fill"></div>
@@ -64,11 +64,19 @@
   <!-- QUIZ (Pessoa 5) -->
   <main>
     <section id="quiz" class="quiz-section">
-      <!-- 
-        Essa página pode ser acessada a partir de um CTA em cursos.html ou index.html.
-        Exemplo de link para cá: <a href="pages/quiz.html">Fazer o Quiz</a>
-        conteúdo da Pessoa 5 
-      -->
+      <div class="quiz-app">
+        <div class="quiz-header">
+          <h1>Quiz</h1>
+          <p>Responda as perguntas abaixo para descobrir qual curso combina mais com você.</p>
+        </div>
+
+        <div id="quiz-container"></div>
+        <div style="text-align:center; margin-top:24px;">
+          <button id="submit-btn" class="submit-btn">Enviar</button>
+          <button id="restart-btn" class="submit-btn" style="display:none; margin-left:12px;">Reiniciar</button>
+        </div>
+      </div>
+      <script src="../js/quiz.js"></script>
     </section>
   </main>
 
