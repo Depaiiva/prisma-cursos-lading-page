@@ -50,17 +50,17 @@ const resultMeta = {
   python: {
     title: 'Python',
     tagline: 'Você gosta de lógica, automação e resultados claros.',
-    image: '../css/pages/images/Python-logo-notext.svg'
+    image: '../assets/quiz/python.svg'
   },
   figma: {
     title: 'Figma',
     tagline: 'Você valoriza interfaces intuitivas e experiências visuais.',
-    image: '../css/pages/images/Figma-logo.svg'
+    image: '../assets/quiz/figma.svg'
   },
   photoshop: {
     title: 'Photoshop',
     tagline: 'Você curte retoques visuais e criatividade digital.',
-    image: '../css/pages/images/Adobe_Photoshop_CC_icon.svg'
+    image: '../assets/quiz/photoshop.svg'
   }
 };
 
