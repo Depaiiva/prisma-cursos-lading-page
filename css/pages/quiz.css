@@ -5,15 +5,15 @@ body {
 }
 
 :root {
-  --page-bg:  #E9D5FF ;
-  --card-bg: #7C3AED; 
+  --page-bg:  #E9D5FF;
+  --card-bg: #7C3AED;
   --card-border: rgba(0,0,0,0.06);
   --card-text: #1F1235;
   --question-bg: #7C3AED;
   --question-border: rgba(255,255,255,0.14);
   --muted-text: #1F1235;
-  --number-bg: #E9D5FF;
-  --pill-bg: #E9D5FF;
+  --number-bg: #C1A3F5;
+  --pill-bg: #C1A3F5;
   --pill-border: rgba(255,255,255,0.10);
   --pill-selected-bg: #d3c6ff;
   --pill-selected-color: #2b0b66;
@@ -228,7 +228,7 @@ main {
 }
 
 .submit-btn {
-  background:#7f60ff;
+  background: #6631D7;
   color:#fff;
   border:none;
   padding:12px 28px;

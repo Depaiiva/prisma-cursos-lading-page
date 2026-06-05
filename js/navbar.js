@@ -17,6 +17,10 @@ function getCurrentPageKey(path) {
 
   const page = lastSegment || 'index.html';
 
+  if(page === 'quiz.html') {
+    return 'courses.html'
+  }
+
   if (page === 'confirmation-form-contact.html') {
     return 'contact.html';
   }
