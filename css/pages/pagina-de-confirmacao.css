@@ -1,0 +1,88 @@
+/* ========================================
+   pagina-de-confirmacao.css
+   Pessoa 6 | Prisma Cursos
+   ======================================== */
+
+/* ---------- Card de confirmação ---------- */
+
+.confirmation-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-2xl);
+  text-align: center;
+  min-height: 550px;
+}
+
+.confirmation-card.contact-form {
+  flex: 1.2;
+}
+
+/* ---------- Ícone de polegar ---------- */
+
+.confirmation-icon {
+  width: 140px;
+  height: 140px;
+  background-color: #1a1033;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.confirmation-icon svg {
+  width: 64px;
+  height: 64px;
+  color: var(--color-primary-light);
+}
+
+/* ---------- Botão ---------- */
+
+.confirmation-btn {
+  text-decoration: none;
+}
+
+/* ---------- Tablet (≤1024px) ---------- */
+
+@media (max-width: 1024px) {
+
+  .confirmation-card {
+    min-height: unset;
+    padding: var(--spacing-2xl) var(--spacing-xl);
+  }
+
+  .confirmation-card.contact-form {
+    flex: unset;
+    width: 100%;
+  }
+
+}
+
+/* ---------- Mobile (≤768px) ---------- */
+
+@media (max-width: 768px) {
+
+  .confirmation-card {
+    gap: var(--spacing-xl);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-md);
+  }
+
+  .confirmation-icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .confirmation-icon svg {
+    width: 44px;
+    height: 44px;
+  }
+
+  .contact-submit-btn.confirmation-btn {
+    width: 100%;
+    padding: var(--spacing-md);
+  }
+
+}
