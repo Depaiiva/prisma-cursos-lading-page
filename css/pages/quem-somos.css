@@ -1,83 +1,111 @@
-/* Bordas roxas */
+/*  bordas roxas (desktop)*/
 .primeiro-titulo,
 .segundo-titulo,
-.terceiro-titulo{
+.terceiro-titulo {
     width: 40%;
     margin: 40px auto;
-
     background-color: #b79ce7;
     border-radius: 10px;
-
     padding: 15px;
-
     text-align: center;
     color: #5b2fd6;
 }
 
-/* Textos */
+/*   textos (desktop) */
 .primeiro-texto,
 .segundo-texto,
-.ultimo-texto{
+.ultimo-texto {
     max-width: 900px;
     margin: 20px auto;
-
     text-align: center;
     line-height: 1.6;
     font-size: 20px;
 }
 
-/* Grade dos cards */
+/* 3. cards (desktop) */
 .cards-grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 24px;
-  flex-wrap: wrap;
-  padding: 40px 20px;
-  width: 100%;
-  box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Card individual */
 .card {
-  background-color: #d9d9d9;
-  border-radius: 12px;
-  padding: 24px 20px;
-  width: 260px;   /* era 200px */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
+    background-color: #d9d9d9;
+    border-radius: 12px;
+    padding: 24px 20px;
+    width: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
 }
 
 /* Título do card */
 .card__titulo {
-  font-size: 1.8rem;
-  font-weight: 800;
-  color: #5a189a;
-  text-align: center;
-  margin: 0;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #5a189a;
+    text-align: center;
+    margin: 0;
 }
 
 /* Ícone */
 .card__icone {
-  width: 120px;
-  height: 120px;
+    width: 120px;
+    height: 120px;
 }
 
 .card__icone img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
-/* Descrição */
-.card__descricao {
-  font-size: 1.1rem;
-  color: #333;
-  text-align: center;
-  line-height: 1.5;
-  margin: 0;
-  font-weight: bold;
+/* Descrição abaixo do card */
+.card_descricao {
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* responsividade (mobile) */
+@media (max-width: 768px) {
+    .primeiro-titulo,
+    .segundo-titulo,
+    .terceiro-titulo {
+        width: 90%;           
+        font-size: 1.5rem;    
+    }
+
+    /* Ajusta os parágrafos para não ficarem colados nas bordas do celular */
+    .primeiro-texto,
+    .segundo-texto,
+    .ultimo-texto {
+        font-size: 16px;       
+        padding: 0 16px;    
+    }
+
+    /* Ajusta a grade para alinhar os cards e descrições perfeitamente no centro */
+    .cards-grid {
+        flex-direction: column;
+        align-items: center;   
+        padding: 20px 10px;
+        gap: 32px;            
+    }
+
+    /* Garante que o texto de descrição abaixo do card fique bem alinhado */
+    .card_descricao {
+        font-size: 1rem;
+        max-width: 280px;     
+    }
 }
