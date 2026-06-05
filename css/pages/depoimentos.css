@@ -1,0 +1,57 @@
+/*Estrutura dos cards*/
+.primeiro-card, 
+.segundo-card,
+.terceiro-card,
+.quarto-card {
+  border: 2px solid #7d33ff;
+  border-radius: 15px;
+  padding: 24px;
+  max-width: 1500px; 
+  margin: 20px auto; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-direction: row-reverse;
+}
+
+/*Textos dos cards (titulo + paragrafo)*/
+.textos-card,
+.stextos-card,
+.ttextos-card,
+.qtextos-card {
+  display: flex;
+  flex-direction: column; 
+  gap: 12px;              
+  text-align: left;      
+}
+
+/*Apenas os titulos dos cards separadamente*/
+.ptitulo,
+.stitulo,
+.ttitulo,
+.qtitulo {
+  font-size: 50px; 
+  font-weight: bold;
+  text-align: center; 
+  margin: 0; 
+}
+
+/*Apenas os paragrados separadamente*/
+.pparagrafo,
+.sparagrafo,
+.tparagrafo,
+.qparagrafo {
+  font-size: 25px; 
+  color: #333333; 
+  margin: 0;
+}
+
+/*Imagens dos cards*/
+.primeiro-card img,
+.segundo-card img,
+.terceiro-card img,
+.quarto-card img {
+
+  border-radius: 20px; 
+}
